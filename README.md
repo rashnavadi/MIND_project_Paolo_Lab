@@ -13,6 +13,7 @@ Processing Details:
 Registers and normalizes fMRI data across runs.
 Merges fMRI runs, adjusting them relative to the first run.
 Outputs processed data for each subject with appropriate notifications.
+
 Step 2: EEG Event Data Processing
 Purpose: Processes EEG event data in relation to fMRI runs, ensuring correct timing alignment.
 
@@ -24,6 +25,7 @@ Processing Details:
 Adjusts and merges event timings across runs.
 Ensures data integrity by handling cases with incomplete or single-run data.
 Produces output files with adjusted event timings for further analysis.
+
 Step 3: fMRI Data Trimming
 Purpose: Trims merged fMRI data according to EEG event timings for precise analysis.
 
@@ -34,6 +36,7 @@ Output Files: Generates new NIfTI files for each event increment, ready for subs
 Processing Details:
 Calculates the number of volumes needed based on event timings.
 Trims and saves fMRI data, preparing it for specific event-related analysis.
+
 Step 4: fMRI Analysis Design and Amalgamation
 Purpose: Creates and executes FSL design files for fMRI analysis, followed by HRF amalgamation.
 
@@ -44,6 +47,7 @@ HRF Amalgamation: Combines different hemodynamic response functions, registering
 Processing Details:
 Automates the creation and execution of fMRI analysis designs.
 Registers and amalgamates HRFs for comprehensive analysis.
+
 Step 5: Comparative Analysis and Statistical Evaluation
 Purpose: Compares results from different event iterations with full event analysis using statistical methods.
 
